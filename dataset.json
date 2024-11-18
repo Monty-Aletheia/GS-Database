@@ -1,0 +1,72 @@
+[
+  {
+    "id": "273365F030844122E063103CA8C090F0",
+    "name": "Smart Light",
+    "category": "Lighting",
+    "model": "Philips Hue",
+    "power_rating": 10.5
+  },
+  {
+    "id": "273365F030854122E063103CA8C090F0",
+    "name": "Smart Thermostat",
+    "category": "HVAC",
+    "model": "Nest Thermostat",
+    "power_rating": 12
+  },
+  {
+    "id": "273365F030864122E063103CA8C090F0",
+    "name": "Smart Plug",
+    "category": "Energy Management",
+    "model": "TP-Link Kasa",
+    "power_rating": 2.5
+  },
+  {
+    "id": "273365F030874122E063103CA8C090F0",
+    "name": "Smart Camera",
+    "category": "Security",
+    "model": "Arlo Pro",
+    "power_rating": 5
+  },
+  {
+    "id": "273365F030884122E063103CA8C090F0",
+    "name": "Smart Speaker",
+    "category": "Audio",
+    "model": "Amazon Echo",
+    "power_rating": 8
+  },
+  {
+    "id": "273365F030894122E063103CA8C090F0",
+    "name": "Smart TV",
+    "category": "Entertainment",
+    "model": "Samsung QLED",
+    "power_rating": 150
+  },
+  {
+    "id": "273365F0308A4122E063103CA8C090F0",
+    "name": "Smart Lock",
+    "category": "Security",
+    "model": "August Smart Lock",
+    "power_rating": 3
+  },
+  {
+    "id": "273365F0308B4122E063103CA8C090F0",
+    "name": "Smart Fridge",
+    "category": "Appliances",
+    "model": "LGThinQ",
+    "power_rating": 200
+  },
+  {
+    "id": "273365F0308C4122E063103CA8C090F0",
+    "name": "Smart Washer",
+    "category": "Appliances",
+    "model": "Samsung Washer",
+    "power_rating": 500
+  },
+  {
+    "id": "273365F0308D4122E063103CA8C090F0",
+    "name": "Smart Vacuum",
+    "category": "Cleaning",
+    "model": "iRobot Roomba",
+    "power_rating": 50
+  }
+]
