@@ -3,7 +3,7 @@ SET SERVEROUTPUT ON;
 // 2. Procedures e Funções (30 Pontos)
 
 // ===========================================
-// =       Function Calculou/Validate        =
+// =       Function Calculo/Validate        =
 // ===========================================
 
 CREATE OR REPLACE FUNCTION validate_email(p_email VARCHAR2)
