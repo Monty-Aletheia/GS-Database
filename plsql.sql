@@ -255,39 +255,39 @@ BEGIN
     -- tb_user_devices
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart Light' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'Alice Johnson' AND ROWNUM = 1;
-    insert_user_devices( v_device_id, v_user_id, 10.5, 5, :v_id);
+    insert_user_devices( v_device_id, v_user_id, 10.5, 5, v_id);
 
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart Thermostat' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'Bob Smith' AND ROWNUM = 1;
-    insert_user_devices( v_device_id, v_user_id, 12.0, 3, :v_id);
+    insert_user_devices( v_device_id, v_user_id, 12.0, 3, v_id);
 
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart Plug' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'Charlie Brown' AND ROWNUM = 1;
-    insert_user_devices( v_device_id, v_user_id, 2.5, 24, :v_id);
+    insert_user_devices( v_device_id, v_user_id, 2.5, 24, v_id);
 
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart Camera' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'Diana Prince' AND ROWNUM = 1;
-    insert_user_devices( v_device_id, v_user_id, 5.0, 12, :v_id);
+    insert_user_devices( v_device_id, v_user_id, 5.0, 12, v_id);
 
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart Speaker' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'Eve Adams' AND ROWNUM = 1;
-    insert_user_devices( v_device_id, v_user_id, 8.0, 4, :v_id);
+    insert_user_devices( v_device_id, v_user_id, 8.0, 4, v_id);
 
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart TV' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'Frank Wright' AND ROWNUM = 1;
-    insert_user_devices( v_device_id, v_user_id, 150.0, 2, :v_id);
+    insert_user_devices( v_device_id, v_user_id, 150.0, 2, v_id);
 
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart Lock' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'Grace Hopper' AND ROWNUM = 1;
-    insert_user_devices( v_device_id, v_user_id, 3.0, 8, :v_id);
+    insert_user_devices( v_device_id, v_user_id, 3.0, 8, v_id);
 
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart Fridge' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'Hank Pym' AND ROWNUM = 1;
-    insert_user_devices( v_device_id, v_user_id, 200.0, 24, :v_id);
+    insert_user_devices( v_device_id, v_user_id, 200.0, 24, v_id);
 
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart Washer' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'Irene Adler' AND ROWNUM = 1;
-    insert_user_devices( v_device_id, v_user_id, 500.0, 3, :v_id);
+    insert_user_devices( v_device_id, v_user_id, 500.0, 3, v_id);
 
     SELECT id INTO v_device_id FROM tb_devices WHERE name = 'Smart Vacuum' AND ROWNUM = 1;
     SELECT id INTO v_user_id FROM tb_users WHERE name = 'John Watson' AND ROWNUM = 1;
