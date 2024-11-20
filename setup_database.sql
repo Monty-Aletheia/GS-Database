@@ -7,7 +7,8 @@ CREATE TABLE tb_devices
     power_rating          DOUBLE PRECISION,
     created_at            TIMESTAMP NOT NULL,
     updated_at            TIMESTAMP,
-    CONSTRAINT pk_tb_devices PRIMARY KEY (id)
+    CONSTRAINT pk_tb_devices PRIMARY KEY (id),
+    CONSTRAINT uc_tb_devices_name UNIQUE (name),
 );
 
 CREATE TABLE tb_users

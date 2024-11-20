@@ -14,7 +14,6 @@ IS
 BEGIN
     l_match := REGEXP_LIKE(p_email, '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$');
     
-    -- Se o formato não for válido, retorna FALSE
     IF NOT l_match THEN
         RETURN FALSE;
     END IF;
@@ -33,8 +32,6 @@ EXCEPTION
     WHEN OTHERS THEN
         RETURN FALSE;
 END;
-/
-
 /
 
 CREATE OR REPLACE FUNCTION calculate_estimated_consumption(p_power_rating DOUBLE PRECISION, p_hours DOUBLE PRECISION)
@@ -80,8 +77,18 @@ CREATE OR REPLACE PROCEDURE validate_tb_devices(
 )
 IS
     invalid_data EXCEPTION;
+    l_count INTEGER;
 BEGIN
     IF p_name IS NULL OR LENGTH(p_name) < 3 THEN
+        RAISE invalid_data;
+    END IF;
+    
+    SELECT COUNT(*)
+    INTO l_count
+    FROM tb_devices
+    WHERE name = p_name;
+
+    IF l_count > 0 THEN
         RAISE invalid_data;
     END IF;
 
